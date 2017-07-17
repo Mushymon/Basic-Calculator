@@ -1,7 +1,7 @@
 # Basic-Calculator
 A basic calculator that has a simple user interface.
 
-The basic calculator requires Python 2.7.
+The basic calculator is compatible with Python 2.7 and 3.6.
 
 How to use: Just run the calculator.py file and that should generate a GUI.
 
