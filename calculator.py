@@ -1,6 +1,5 @@
 """Basic Calculator by Calvin Liu"""
-from __future__ import print_function
-from Tkinter import *
+import Tkinter
 import ttk
 import math
 
@@ -180,7 +179,7 @@ class Calculator(object):
     def __init__(self, root):
 
         # Will hold the changing value stored in the entry
-        self.entry_value = StringVar(root, value="")
+        self.entry_value = Tkinter.StringVar(root, value="")
 
         # Define title for the app
         root.title("Calculator")
@@ -276,10 +275,10 @@ class Calculator(object):
 if __name__ == '__main__':
 
     # Get the root window object
-    ROOT = Tk()
+    root = Tkinter.Tk()
 
     # Create the calculator
-    CALC = Calculator(ROOT)
+    calc = Calculator(root)
 
     # Run the app until exited
-    ROOT.mainloop()
+    root.mainloop()
